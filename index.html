@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CEB Monthly Bill</title>
+
+<link rel ="stylesheet" type ="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="containor">
+		<div class = "item">
+			<table class ="ceb">
+			<col style="width:40%">
+			<col style="width:50%">
+
+				<tr>
+					<td><img src ="ceb.jpg"></td>
+					<td class="cebName">CEB BILL CALCULATOR</td>
+				</tr>
+			</table>
+			<p>No Of Units Used :&nbsp;&nbsp;
+			<input type="number" id ="unit" placeholder="0000000" min="0">&nbsp;&nbsp;
+			kWh &nbsp;&nbsp;<button onclick="document.getElementById('unit').value=''">Clear</button></p>
+			<br>
+			
+			
+			
+			<br>
+			
+			<button onclick="checkBill()">Calculate My Bill</button><br>
+			<table>
+			<tr>
+			<td><div class="bill">Your Bill is :</div></td>
+			<td><div id="result" class ="price"></div></td>
+			</tr>
+			</table>
+			
+			
+			<br>
+			<br>
+			<table>
+			<col style="width:90%">
+			<col style="width:80%">
+			<tr>
+			<td><p class="link1" ><a  style="text-decoration:none;color:#D8DCD6;" href="https://roar.media/english/life/reports/electricity-bill-calculated-analysis " >More Information on how my bill is<br>calculated </a></p></td>
+			<td><p class ="link2"><a style="text-decoration:none;color:#D8DCD6;" href = "https://ceb.lk/bill-calculation-commercial/en ">Go to CEB Site</a></p></td>
+			</tr>
+			</table>
+			
+			<br>
+			
+			
+			<br>
+			
+			<div class="foot">Created By : Abishek Saravanan</div>
+		</div>
+		</div>
+	<script type="text/javascript" src="checkBill.js"></script>			
+		
+
+
+
+</body>
+
+
+
+
+
+
+</html>
